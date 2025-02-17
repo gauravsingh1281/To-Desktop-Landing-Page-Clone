@@ -5,10 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Desktop Clone</title>
+    <script src="https://kit.fontawesome.com/9d916f4e06.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
+    <main>
+        <!-- Navbar -->
+        <nav class="p-3 flex bg-white justify-between items-center">
+            <a href="#" id="brand" class="flex gap-2 items-center">
+                <img class="object-cover max-w-12 max-h-12 " src="./assets/asset 0.png" alt="logo">
+                <span class="text-lg font-medium font-Poppins">ToDesktop</span>
+            </a>
+            <!--Desktop Nav links -->
+            <div id="nav-links" class="hidden lg:flex gap-12">
+                <a href="#" class="font-medium hover:text-primary">Pricing</a>
+                <a href="#" class="font-medium hover:text-primary">Docs</a>
+                <a href="#" class="font-medium hover:text-primary">Changelog</a>
+                <a href="#" class="font-medium hover:text-primary">Blogs</a>
+                <a href="#" class="font-medium hover:text-primary">Login</a>
+
+            </div>
+            <button
+                class="hidden lg:flex justify-center items-center gap-2  border-2 px-6 py-2 border-gray-400 rounded-lg hover:border-gray-600">
+                <img src="./assets/asset 1.svg">
+                <span>Electron Developers</span>
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <button class="p-2 md:hidden" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-600 "></i>
+            </button>
+            <!--Mobile Nav links -->
+            <div id="mobile-nav" class=" hidden fixed bg-white inset-0 p-3 z-10 md:hidden">
+
+                <div class="flex  justify-between items-center">
+                    <a href="#" id="brand" class="flex gap-2 items-center">
+                        <img class="object-cover max-w-12 max-h-12 " src="./assets/asset 0.png" alt="logo">
+                        <span class="text-lg font-medium font-Poppins">ToDesktop</span>
+                    </a>
+                    <button class="p-2 lg:hidden" onclick="handleMenu()">
+                        <i class="fa-solid fa-xmark text-gray-600 "></i>
+                    </button>
+                </div>
+                <div id="mobile-navlinks" class="mt-6  p-3 gap-2">
+                    <a href="#" class="font-medium  m-3 p-3 hover:bg-gray-50 block rounded-lg w-full">Pricing</a>
+                    <a href="#" class="font-medium  m-3 p-3 hover:bg-gray-50 block rounded-lg w-full">Docs</a>
+                    <a href="#" class="font-medium  m-3 p-3 hover:bg-gray-50 block rounded-lg w-full">Changelog</a>
+                    <a href="#" class="font-medium  m-3 p-3 hover:bg-gray-50 block rounded-lg w-full">Blogs</a>
+                    <a href="#" class="font-medium  m-3 p-3 hover:bg-gray-50 block rounded-lg w-full">Login</a>
+                    <div class="bg-gray-300 w-full h-[1px]"></div>
+                    <button class="flex items-center gap-2 w-full px-6 py-3 hover:bg-gray-50 rounded-lg mt-6">
+                        <img src="./assets/asset 1.svg">
+                        <span>Electron Developers</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </main>
+    <script src="./index.js"></script>
 </body>
 
 </html>
