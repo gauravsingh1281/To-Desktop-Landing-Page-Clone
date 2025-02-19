@@ -772,6 +772,14 @@ h1,
   gap: 1.5rem;
 }
 
+.gap-10{
+  gap: 2.5rem;
+}
+
+.gap-5{
+  gap: 1.25rem;
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -936,6 +944,10 @@ h1,
 
 .pt-12{
   padding-top: 3rem;
+}
+
+.text-left{
+  text-align: left;
 }
 
 .font-Poppins{
